@@ -80,7 +80,7 @@ export async function getStaticProps() {
     });
   }
 
-  return { props: { sales: transformedSales } };
+  return { props: { sales: transformedSales } , revalidate: 5  };
 }
 
 export default LastSalesPage;
